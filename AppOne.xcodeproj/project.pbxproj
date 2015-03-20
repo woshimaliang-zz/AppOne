@@ -23,6 +23,9 @@
 		F40952431AB394AF0045422B /* ImagesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F40952421AB394AF0045422B /* ImagesManager.m */; };
 		F4F8AA021AB8CA900086B5D1 /* ImageDownloadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F8AA011AB8CA900086B5D1 /* ImageDownloadTests.m */; };
 		F4F8AA051AB8F3B80086B5D1 /* ShapeMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F8AA041AB8F3B80086B5D1 /* ShapeMainView.m */; };
+		F4F8AA071ABBADE60086B5D1 /* items.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4F8AA061ABBADE60086B5D1 /* items.plist */; };
+		F4F8AA0A1ABBB17B0086B5D1 /* MapsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F8AA091ABBB17B0086B5D1 /* MapsViewController.m */; };
+		F4F8AA0C1ABBB8040086B5D1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F8AA0B1ABBB8040086B5D1 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +69,10 @@
 		F4F8AA011AB8CA900086B5D1 /* ImageDownloadTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDownloadTests.m; sourceTree = "<group>"; };
 		F4F8AA031AB8F3B80086B5D1 /* ShapeMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeMainView.h; sourceTree = "<group>"; };
 		F4F8AA041AB8F3B80086B5D1 /* ShapeMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapeMainView.m; sourceTree = "<group>"; };
+		F4F8AA061ABBADE60086B5D1 /* items.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = items.plist; sourceTree = "<group>"; };
+		F4F8AA081ABBB17B0086B5D1 /* MapsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapsViewController.h; sourceTree = "<group>"; };
+		F4F8AA091ABBB17B0086B5D1 /* MapsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapsViewController.m; sourceTree = "<group>"; };
+		F4F8AA0B1ABBB8040086B5D1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		FB929B17D6E038473FA13EEB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -74,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4F8AA0C1ABBB8040086B5D1 /* MapKit.framework in Frameworks */,
 				DEC9A204543A3A37E5F0DCE5 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,6 +108,7 @@
 		48AF05127D6CE526060535BE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F4F8AA0B1ABBB8040086B5D1 /* MapKit.framework */,
 				FB929B17D6E038473FA13EEB /* libPods.a */,
 			);
 			name = Frameworks;
@@ -147,6 +156,9 @@
 				F409520A1AB379320045422B /* AppDelegate.h */,
 				F409520B1AB379320045422B /* AppDelegate.m */,
 				F40952131AB379320045422B /* Main.storyboard */,
+				F4F8AA061ABBADE60086B5D1 /* items.plist */,
+				F4F8AA081ABBB17B0086B5D1 /* MapsViewController.h */,
+				F4F8AA091ABBB17B0086B5D1 /* MapsViewController.m */,
 				F40952161AB379320045422B /* Images.xcassets */,
 				F40952181AB379320045422B /* LaunchScreen.xib */,
 				F40952061AB379320045422B /* Supporting Files */,
@@ -266,6 +278,7 @@
 				F40952151AB379320045422B /* Main.storyboard in Resources */,
 				F409521A1AB379320045422B /* LaunchScreen.xib in Resources */,
 				F40952171AB379320045422B /* Images.xcassets in Resources */,
+				F4F8AA071ABBADE60086B5D1 /* items.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +336,7 @@
 				F409520C1AB379320045422B /* AppDelegate.m in Sources */,
 				F40952311AB37E220045422B /* ShapeView.m in Sources */,
 				F409520F1AB379320045422B /* ImagesViewController.m in Sources */,
+				F4F8AA0A1ABBB17B0086B5D1 /* MapsViewController.m in Sources */,
 				F40952431AB394AF0045422B /* ImagesManager.m in Sources */,
 				F40952091AB379320045422B /* main.m in Sources */,
 				F40952361AB37EBC0045422B /* ImageDetailViewController.m in Sources */,

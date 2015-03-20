@@ -36,7 +36,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="838" y="-750"/>
+            <point key="canvasLocation" x="134" y="-1638"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -51,11 +51,64 @@
                     <connections>
                         <segue destination="U11-wh-Mry" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="za8-Sj-E1O" kind="relationship" relationship="viewControllers" id="9yu-7f-m2E"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-64" y="-724"/>
+            <point key="canvasLocation" x="-524" y="-732"/>
+        </scene>
+        <!--Maps-->
+        <scene sceneID="vmx-lM-Thj">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZuZ-Ot-JXt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="za8-Sj-E1O" customClass="MapsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5vM-Ty-L0v"/>
+                        <viewControllerLayoutGuide type="bottom" id="i4u-h4-4mj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dH0-tv-sX0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M70-8S-TEg">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="za8-Sj-E1O" id="tag-Jw-Xdq"/>
+                                </connections>
+                            </searchBar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NPc-xT-JUC">
+                                <rect key="frame" x="0.0" y="44" width="600" height="556"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="NPc-xT-JUC" firstAttribute="top" secondItem="M70-8S-TEg" secondAttribute="bottom" id="8eF-7C-Nx4"/>
+                            <constraint firstItem="M70-8S-TEg" firstAttribute="leading" secondItem="dH0-tv-sX0" secondAttribute="leading" id="Co9-7D-mzi"/>
+                            <constraint firstAttribute="trailing" secondItem="M70-8S-TEg" secondAttribute="trailing" id="DVq-yy-Kqz"/>
+                            <constraint firstItem="M70-8S-TEg" firstAttribute="top" secondItem="5vM-Ty-L0v" secondAttribute="bottom" id="TU2-5q-pfv"/>
+                            <constraint firstItem="NPc-xT-JUC" firstAttribute="width" secondItem="M70-8S-TEg" secondAttribute="width" id="tAS-9t-b0g"/>
+                            <constraint firstItem="NPc-xT-JUC" firstAttribute="top" secondItem="M70-8S-TEg" secondAttribute="bottom" id="tfv-h4-zrt"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="4fS-cg-nZy" appends="YES" id="zBG-FJ-fG0"/>
+                        </connections>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Maps" image="first" id="JZr-py-FLE"/>
+                    <connections>
+                        <outlet property="mapView" destination="NPc-xT-JUC" id="c0g-Oq-nCu"/>
+                        <outlet property="searchBar" destination="M70-8S-TEg" id="8N9-KA-fFm"/>
+                    </connections>
+                </viewController>
+                <tapGestureRecognizer id="4fS-cg-nZy">
+                    <connections>
+                        <action selector="handleTap:" destination="za8-Sj-E1O" id="xda-Mi-mYm"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-646" y="156"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3Zc-71-UFn">
@@ -74,7 +127,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cnO-Ov-neb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-82" y="194"/>
+            <point key="canvasLocation" x="342" y="-732"/>
         </scene>
         <!--Images Search-->
         <scene sceneID="TE7-dN-lEA">
@@ -180,7 +233,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="683" y="134"/>
+            <point key="canvasLocation" x="359" y="102"/>
         </scene>
         <!--Image Detail-->
         <scene sceneID="m6I-Uv-h7u">
@@ -240,7 +293,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b6J-Bg-mRU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1362" y="148"/>
+            <point key="canvasLocation" x="1114" y="148"/>
         </scene>
     </scenes>
     <resources>
