@@ -9,29 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AppOne/ImagesManager.m"
-            timestampString = "448062867.241451"
+            filePath = "AppOneTests/ImageDownloadTests.m"
+            timestampString = "448318103.892688"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
-            landmarkName = "-loading:withCursor:returnResponse:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AppOne/ImagesManager.m"
-            timestampString = "448062987.672846"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
-            landmarkName = "-loading:withCursor:returnResponse:"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "-testExample"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

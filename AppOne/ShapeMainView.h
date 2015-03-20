@@ -10,4 +10,6 @@
 
 @interface ShapeMainView : UIView
 
+@property (nonatomic) NSArray* shapes;
+
 @end

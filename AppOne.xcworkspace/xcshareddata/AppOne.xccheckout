@@ -6,29 +6,33 @@
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>19E49533-49CC-4280-AFD0-13021B4B7C9E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AppOne</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>F26C59C258CE51BEBBB19352EB0FBE1FF50F9D2C</key>
-		<string>https://github.com/woshimaliang/AppOne.git</string>
+		<key>343D4FCAC8B8E9F9846C42E13AFB1E4EEA674400</key>
+		<string>https://github.com/woshimaliang/AppOne</string>
 	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>AppOne.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>F26C59C258CE51BEBBB19352EB0FBE1FF50F9D2C</key>
-		<string>AppOne/</string>
+		<key>343D4FCAC8B8E9F9846C42E13AFB1E4EEA674400</key>
+		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/woshimaliang/AppOne.git</string>
+	<string>https://github.com/woshimaliang/AppOne</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>F26C59C258CE51BEBBB19352EB0FBE1FF50F9D2C</string>
+	<string>343D4FCAC8B8E9F9846C42E13AFB1E4EEA674400</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>F26C59C258CE51BEBBB19352EB0FBE1FF50F9D2C</string>
+			<string>343D4FCAC8B8E9F9846C42E13AFB1E4EEA674400</string>
 			<key>IDESourceControlWCCName</key>
 			<string>AppOne</string>
 		</dict>

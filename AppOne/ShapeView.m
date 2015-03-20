@@ -71,7 +71,7 @@
     shapeLayer.path = [path CGPath];
     
     shapeLayer.fillColor = [[UIColor redColor] CGColor];
-    shapeLayer.opacity = 0.8;
+    shapeLayer.opacity = 1;
     
     [[self layer] addSublayer:shapeLayer];
 }
@@ -95,7 +95,7 @@
     shapeLayer.path = path;
     
     shapeLayer.fillColor = [[UIColor greenColor] CGColor];
-    shapeLayer.opacity = 0.8;
+    shapeLayer.opacity = 1;
     
     [[self layer] addSublayer:shapeLayer];
 }
@@ -120,6 +120,10 @@
     
     CGPoint pt = [gesture locationInView:self.superview];
     self.center = pt;
+    
+    if (self.delegate && [self.delegate respondsToSelector:@selector(didMoved:)]) {
+        [self.delegate didMoved:self];
+    }
 }
 
 

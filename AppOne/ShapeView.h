@@ -14,8 +14,16 @@ typedef NS_ENUM(NSInteger, ShapeType) {
     ShapeType_Triangle = 2,
 };
 
+@protocol ShapeMotion <NSObject>
+
+@optional
+-(void) didMoved:(UIView*)view;
+
+@end
+
 @interface ShapeView : UIView <UIGestureRecognizerDelegate>
 
 @property(nonatomic) ShapeType shapeType;
+@property(nonatomic, weak) id<ShapeMotion> delegate;
 
 @end

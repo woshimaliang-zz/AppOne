@@ -16,9 +16,23 @@
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3nM-NC-hEz" customClass="ShapeMainView">
+                                <rect key="frame" x="0.0" y="20" width="600" height="551"/>
+                                <color key="backgroundColor" red="0.094117647060000004" green="0.77647058820000003" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="3nM-NC-hEz" secondAttribute="trailing" id="1Lp-ou-1YW"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="3nM-NC-hEz" secondAttribute="bottom" id="7lk-tO-9A1"/>
+                            <constraint firstItem="3nM-NC-hEz" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="UcW-Rd-5Mg"/>
+                            <constraint firstItem="3nM-NC-hEz" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="d7k-mX-wid"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Shapes" image="second" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="mainView" destination="3nM-NC-hEz" id="c57-99-Gto"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -85,7 +99,7 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Et6-g9-Xg0" id="WMR-cK-CF5">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aFz-Kb-wKa">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aFz-Kb-wKa">
                                             <rect key="frame" x="107" y="29" width="515" height="21"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="13"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -102,17 +116,17 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="mrJ-uH-cyz" firstAttribute="leading" secondItem="WMR-cK-CF5" secondAttribute="leadingMargin" constant="5" id="FaM-Yu-Kve"/>
+                                        <constraint firstAttribute="centerY" secondItem="mrJ-uH-cyz" secondAttribute="centerY" id="Hdi-8M-7Ge"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="mrJ-uH-cyz" secondAttribute="bottom" constant="2" id="KVc-lJ-4n0"/>
-                                        <constraint firstItem="mrJ-uH-cyz" firstAttribute="centerY" secondItem="aFz-Kb-wKa" secondAttribute="centerY" id="P23-oR-0Fe"/>
+                                        <constraint firstAttribute="centerY" secondItem="aFz-Kb-wKa" secondAttribute="centerY" id="ZEz-eb-BMV"/>
+                                        <constraint firstItem="mrJ-uH-cyz" firstAttribute="height" secondItem="aFz-Kb-wKa" secondAttribute="height" id="ZY2-ud-2uT"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="aFz-Kb-wKa" secondAttribute="trailing" id="eNf-rr-HgQ"/>
                                         <constraint firstItem="aFz-Kb-wKa" firstAttribute="leading" secondItem="mrJ-uH-cyz" secondAttribute="trailing" constant="10" id="hrj-QG-g3I"/>
-                                        <constraint firstAttribute="centerY" secondItem="mrJ-uH-cyz" secondAttribute="centerY" constant="0.5" id="m14-3T-Ddc"/>
                                         <constraint firstItem="mrJ-uH-cyz" firstAttribute="top" secondItem="WMR-cK-CF5" secondAttribute="topMargin" constant="2" id="y2P-fL-LzE"/>
                                     </constraints>
                                     <variation key="default">
                                         <mask key="constraints">
                                             <exclude reference="KVc-lJ-4n0"/>
-                                            <exclude reference="P23-oR-0Fe"/>
                                             <exclude reference="y2P-fL-LzE"/>
                                         </mask>
                                     </variation>

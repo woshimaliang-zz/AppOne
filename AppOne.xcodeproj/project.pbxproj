@@ -21,6 +21,8 @@
 		F40952371AB37EBC0045422B /* ImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F40952351AB37EBC0045422B /* ImageTableViewCell.m */; };
 		F409523A1AB38DC30045422B /* ImageItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F40952391AB38DC30045422B /* ImageItem.m */; };
 		F40952431AB394AF0045422B /* ImagesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F40952421AB394AF0045422B /* ImagesManager.m */; };
+		F4F8AA021AB8CA900086B5D1 /* ImageDownloadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F8AA011AB8CA900086B5D1 /* ImageDownloadTests.m */; };
+		F4F8AA051AB8F3B80086B5D1 /* ShapeMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F8AA041AB8F3B80086B5D1 /* ShapeMainView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,9 @@
 		F40952391AB38DC30045422B /* ImageItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageItem.m; sourceTree = "<group>"; };
 		F40952411AB394AF0045422B /* ImagesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagesManager.h; sourceTree = "<group>"; };
 		F40952421AB394AF0045422B /* ImagesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagesManager.m; sourceTree = "<group>"; };
+		F4F8AA011AB8CA900086B5D1 /* ImageDownloadTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDownloadTests.m; sourceTree = "<group>"; };
+		F4F8AA031AB8F3B80086B5D1 /* ShapeMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeMainView.h; sourceTree = "<group>"; };
+		F4F8AA041AB8F3B80086B5D1 /* ShapeMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapeMainView.m; sourceTree = "<group>"; };
 		FB929B17D6E038473FA13EEB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -135,6 +140,8 @@
 				F40952331AB37EBC0045422B /* ImageDetailViewController.m */,
 				F409522F1AB37E220045422B /* ShapeView.h */,
 				F40952301AB37E220045422B /* ShapeView.m */,
+				F4F8AA031AB8F3B80086B5D1 /* ShapeMainView.h */,
+				F4F8AA041AB8F3B80086B5D1 /* ShapeMainView.m */,
 				F40952101AB379320045422B /* ShapesViewController.h */,
 				F40952111AB379320045422B /* ShapesViewController.m */,
 				F409520A1AB379320045422B /* AppDelegate.h */,
@@ -160,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				F40952251AB379320045422B /* AppOneTests.m */,
+				F4F8AA011AB8CA900086B5D1 /* ImageDownloadTests.m */,
 				F40952231AB379320045422B /* Supporting Files */,
 			);
 			path = AppOneTests;
@@ -309,6 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F409523A1AB38DC30045422B /* ImageItem.m in Sources */,
+				F4F8AA051AB8F3B80086B5D1 /* ShapeMainView.m in Sources */,
 				F40952121AB379320045422B /* ShapesViewController.m in Sources */,
 				F40952371AB37EBC0045422B /* ImageTableViewCell.m in Sources */,
 				F409520C1AB379320045422B /* AppDelegate.m in Sources */,
@@ -325,6 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F40952261AB379320045422B /* AppOneTests.m in Sources */,
+				F4F8AA021AB8CA900086B5D1 /* ImageDownloadTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

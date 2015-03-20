@@ -14,6 +14,7 @@
 #import <UIImageView+WebCache.h>
 
 @interface ImagesViewController () <UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate, UIGestureRecognizerDelegate> {
+    NSString* _keyword;
 }
 
 @property (nonatomic) IBOutlet UISearchBar* searchBar;
@@ -50,6 +51,8 @@
 }
 
 -(void) searching:(NSString*)keyword withCursor:(NSInteger)index  {
+    _keyword = keyword;
+    
     __block ImagesViewController* __weak weakSelf = self;
     
     [[ImagesManager sharedInstance] loading:keyword withCursor:index returnResponse:^(NSArray * array) {
@@ -88,18 +91,6 @@
 - (IBAction)handleTap {
     [self.searchBar resignFirstResponder];
 }
-
-//- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch
-//{
-//    if ([touch.view isDescendantOfView:self.tableView]) {
-//        
-//        // Don't let selections of auto-complete entries fire the
-//        // gesture recognizer
-//        return NO;
-//    }
-//    
-//    return YES;
-//}
 
 
 #pragma mark - Table view data source
@@ -144,8 +135,22 @@
     ImageItem* item = [_tableData objectAtIndex:indexPath.row];
     
     cell.label.text = item.rawTitle;
+    [self highlightLabelText:cell.label forText:_keyword];
     [cell.tbImage sd_setImageWithURL:[NSURL URLWithString:item.tbImgUrl]];
     return cell;
+}
+
+-(void) highlightLabelText:(UILabel*) label forText:(NSString*)text {
+    if(label.text.length==0) return;
+    
+    NSMutableAttributedString *attributedText = [[NSMutableAttributedString alloc] initWithString:label.text attributes:nil];
+    
+    // Red text attributes
+    NSRange textRange = [label.text rangeOfString:text options:NSCaseInsensitiveSearch];// * Notice that usage of rangeOfString in this case may cause some bugs - I use it here only for demonstration
+    [attributedText setAttributes:@{NSForegroundColorAttributeName:[UIColor darkGrayColor]} range:textRange];
+    [attributedText setAttributes:@{NSFontAttributeName: [UIFont boldSystemFontOfSize:14]} range:textRange];
+    
+    label.attributedText = attributedText;
 }
 
 //- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
